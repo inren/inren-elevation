@@ -1,0 +1,48 @@
+<!--
+
+    Copyright 2014 the original author or authors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+    implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<html xmlns:wicket>
+<wicket:panel>
+	<form wicket:id="form" class="form-horizontal">
+		<div class="control-group">
+			<label class="control-label" for="name" wicket:id="name.label">[name]</label>
+			<div class="controls">
+				<input wicket:id="name" type="text" name="name" class="text" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="description" wicket:id="description.label">[description]</label>
+			<div class="controls">
+				<input wicket:id="description" type="text" name="description" class="text" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="roles" wicket:id="roles.label">[roles]</label>
+			<div class="controls">
+				<span name="roles" wicket:id="roles"></span>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+				<button class="btn" wicket:id="submit"><wicket:message key="submit.label">[submit]</wicket:message></button>
+				<button class="btn" wicket:id="cancel"><wicket:message key="cancel.label">[cancel]</wicket:message></button>
+			</div>
+		</div>
+	</form>
+</wicket:panel>
+</html>

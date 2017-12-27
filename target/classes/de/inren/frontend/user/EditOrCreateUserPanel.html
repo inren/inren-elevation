@@ -1,0 +1,88 @@
+<!--
+
+    Copyright 2014 the original author or authors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+    implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<html xmlns:wicket>
+<wicket:panel>
+	<form wicket:id="form" class="form-horizontal">
+		<div class="control-group">
+			<label class="control-label" for="email" wicket:id="email.label">[email]</label>
+			<div class="controls">
+				<input wicket:id="email" type="text" name="email" class="text" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="password" wicket:id="password.label">[password]</label>
+			<div class="controls">
+				<input wicket:id="password" type="password" name="password" class="text" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="passwordrepeat" wicket:id="passwordrepeat.label">[passwordrepeat]</label>
+			<div class="controls">
+				<input wicket:id="passwordrepeat" type="password" name="passwordrepeat" class="text" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="firstname" wicket:id="firstname.label">[firstname]</label>
+			<div class="controls">
+				<input wicket:id="firstname" type="text" name="firstname" class="text" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="lastname" wicket:id="lastname.label">[lastname]</label>
+			<div class="controls">
+				<input wicket:id="lastname" type="text" name="lastname" class="text" />
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="accountNonExpired" wicket:id="accountNonExpired.label">[accountNonExpired]</label>
+			<div class="controls">
+				<input wicket:id="accountNonExpired" type="checkbox" name="accountNonExpired" class="text" />
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="accountNonLocked" wicket:id="accountNonLocked.label">[accountNonLocked]</label>
+			<div class="controls">
+				<input wicket:id="accountNonLocked" type="checkbox" name="accountNonLocked" class="text" />
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="credentialsNonExpired" wicket:id="credentialsNonExpired.label">[accountNonExpired]</label>
+			<div class="controls">
+				<input wicket:id="credentialsNonExpired" type="checkbox" name="credentialsNonExpired" class="text" />
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="roles" wicket:id="roles.label">[roles]</label>
+			<div class="controls">
+				<span name="roles" wicket:id="roles"></span>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+				<button class="btn" wicket:id="submit"><wicket:message key="submit.label">[submit]</wicket:message></button>
+				<button class="btn" wicket:id="cancel"><wicket:message key="cancel.label">[cancel]</wicket:message></button>
+			</div>
+		</div>
+	</form>
+</wicket:panel>
+</html>
