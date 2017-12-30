@@ -15,3 +15,38 @@ But until then, that is my playground.
 Best regards,
     Ingo Renner    
  
+## To get it run
+
+There are 2 environment variables you have to set
+ * private.data.home Thsi is where your private data is stored. Backup of your categories and so on.
+ * spring.profiles.active directory where the spring configuration is. This configuration I don't share here but you can take the example to create a personal one.
+ 
+ 
+### Configuration example
+
+In the directory for spring.profiles.active you have to place two files:
+
+jpa.mysql.properties which contains the jpa settings:
+
+> jpa.databasePlatform=org.hibernate.dialect.MySQL5Dialect
+
+> jpa.showSql=false
+
+> jpa.generateDdl=true
+ 
+> hibernate.hbm2ddl.auto=create
+
+ 
+ 
+and db.mysql.properties which cantains your database settings:
+
+> jdbc.driverClassName=com.mysql.jdbc.Driver
+
+> jdbc.url=jdbc:mysql://localhost:3306/databasename
+
+> jdbc.username=username
+
+> jdbc.password=password
+
+
+ 
