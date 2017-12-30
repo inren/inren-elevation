@@ -10,7 +10,7 @@ As a working father, I can only work later the evening (until midnight) on this 
 
 If you think, you like my framework and want to use it also for your personal purpose, just fork it and have fun. If you think you would like to join me, send me an email. We can fork the project to one where we only commit stuff that is well thought trough. 
 
-But until then, thats my playground.
+But until then, that is my playground.
 
 Best regards,
     Ingo Renner    
