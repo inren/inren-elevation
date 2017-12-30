@@ -38,7 +38,6 @@ import de.inren.data.domain.security.Role;
 import de.inren.frontend.admin.AdminPage;
 import de.inren.frontend.application.HomePage;
 import de.inren.frontend.auth.LoginPage;
-import de.inren.frontend.banking.AccountOverviewPage;
 import de.inren.frontend.banking.BankDataImportPage;
 import de.inren.frontend.banking.ManageTransactionsPage;
 import de.inren.frontend.banking.account.ManageAccountsPage;
@@ -201,9 +200,6 @@ public class NavigationProvider {
 						new NavigationElement(ManageTransactionsPage.class, "Transactions.label", bankRoles,
 								ComponentPosition.LEFT),
 						Arrays.asList(
-								new GNode<NavigationElement>(new NavigationElement(AccountOverviewPage.class,
-										"AccountOverview.label", bankRoles, ComponentPosition.LEFT)),
-
 								new GNode<NavigationElement>(new NavigationElement(ManageAccountsPage.class,
 										"ManageAccounts.label", bankRoles, ComponentPosition.LEFT)),
 

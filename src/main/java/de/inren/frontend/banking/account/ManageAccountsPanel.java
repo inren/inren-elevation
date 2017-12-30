@@ -26,7 +26,6 @@ import de.agilecoders.wicket.core.markup.html.bootstrap.image.GlyphIconType;
 import de.agilecoders.wicket.core.markup.html.bootstrap.table.TableBehavior;
 import de.inren.data.domain.banking.Account;
 import de.inren.frontend.common.manage.IWorktopManageDelegate;
-import de.inren.frontend.common.panel.ActionPanelBuilder;
 import de.inren.frontend.common.panel.IAdminPanel;
 import de.inren.frontend.common.panel.ManagePanel;
 import de.inren.frontend.common.table.AjaxFallbackDefaultDataTableBuilder;
@@ -66,7 +65,6 @@ public class ManageAccountsPanel extends ManagePanel implements IAdminPanel {
 			public void populateItem(Item<ICellPopulator<AccountState>> cellItem, String componentId,
 					IModel<AccountState> rowModel) {
 
-				final ActionPanelBuilder linkBuilder = ActionPanelBuilder.getBuilder();
 				final AccountState accountState = rowModel.getObject();
 				final ButtonGroup bg = new ButtonGroup(componentId) {
 
@@ -92,7 +90,8 @@ public class ManageAccountsPanel extends ManagePanel implements IAdminPanel {
 				cellItem.add(bg);
 			}
 		}).addPropertyColumn("account.owner").addPropertyColumn("account.number").addPropertyColumn("account.name")
-				.addMoneyPropertyColumn("amount").addPropertyColumn("lastUpdate").setNumberOfRows(50).build(id);
+				.addMoneyPropertyColumn("amount").addDatePropertyColumn("lastUpdate", "dd.MM.yyyy HH:mm", false)
+				.setNumberOfRows(50).build(id);
 		TableBehavior tableBehavior = new TableBehavior().bordered().condensed();
 		table.add(tableBehavior);
 		return table;
