@@ -18,7 +18,7 @@ Best regards,
 ## To get it run
 
 There are 2 environment variables you have to set
- * private.data.home Thsi is where your private data is stored. Backup of your categories and so on.
+ * private.data.home This is where your private data is stored. Backup of your categories and so on.
  * spring.profiles.active directory where the spring configuration is. This configuration I don't share here but you can take the example to create a personal one.
  
  
