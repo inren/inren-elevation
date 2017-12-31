@@ -38,7 +38,7 @@ jpa.mysql.properties which contains the jpa settings:
 
  
  
-and db.mysql.properties which cantains your database settings:
+and db.mysql.properties which captains your database settings:
 
 > jdbc.driverClassName=com.mysql.jdbc.Driver
 
